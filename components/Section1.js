@@ -1,4 +1,6 @@
 import Link from "next/link"
+import Image from "next/image"
+import Author from "./_child/author"
 const Section1 = () => {
   
     const bg = {
@@ -23,7 +25,7 @@ function Slide(){
         <div className="grid md:grid-cols-2">
             <div className="image">
                 <Link href={"/"}>
-                <img src={"/images/img1.jpg"} width={600} height={600} />
+                <Image src={"/images/img1.jpg"} width={600} height={600} />
                 </Link>
             </div>
 
@@ -40,7 +42,7 @@ function Slide(){
                 <p className="text-gray-500 py-3">
                     description
                 </p>
-                <h1>Author</h1>
+                <Author></Author>
             </div>
         </div>
     )
