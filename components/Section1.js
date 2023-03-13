@@ -1,6 +1,15 @@
+'use client';
+
+import { createContext } from 'react';
+
+
 import Link from "next/link"
 import Image from "next/image"
 import Author from "./_child/author"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay } from 'swiper';
+import 'swiper/css';
+
 const Section1 = () => {
   
     const bg = {
@@ -13,7 +22,9 @@ const Section1 = () => {
         <div className="container mx-auto md:px-20">
             <h1 className="font-bold text-4xl pb-12 text-center">Trending</h1>
 
-        <Slide />
+            
+             <Slide />
+            
             
         </div>
     </section>
