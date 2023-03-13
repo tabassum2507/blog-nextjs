@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Newsletter from './_child/newsletter';
 
 import { ImFacebook, ImTwitter, ImYoutube } from "react-icons/im";
 
@@ -11,6 +12,8 @@ const Footer = () => {
 
   return (
 <footer className="bg-gray-50" style={bg}>
+
+  <Newsletter></Newsletter>
       
       <div className="container mx-auto flex justify-center py-12">
           <div className="py-5">

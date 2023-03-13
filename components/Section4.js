@@ -20,11 +20,11 @@ const Section4 = () => {
                 <h1 className="font-bold text-4xl py-12">Travel</h1>
                 <div className="flex flex-col gap-6">
                 <Post />
-              <Post />
-              <Post />
-              <Post />
-              <Post />
-                </div>
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+              </div>
             </div>
         </div>
     </section>  
