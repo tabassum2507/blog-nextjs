@@ -1,8 +1,13 @@
 import Image from "next/image"
 import Link from "next/link"
 import Author from "./_child/author"
+import getPost from "../lib/helper"
+import fetcher from "../lib/fetcher"
 
 const Section2 = () => {
+  
+
+
   return (
     <section className="container mx-auto md:px-20 py-10">
        <h1 className="font-bold text-4xl py-12 text-center">Latest Posts</h1>
@@ -23,7 +28,7 @@ function Post(){
   return(
     <div className="item">
       <div className="images">
-         <Link href={"/"}><Image src={"/images/img1.jpg"} className="rounded" width={500} height={350}></Image></Link>
+         <Link href={"/"}><Image src={"/images/img1.jpg"} className="rounded" alt="image" width={500} height={350}></Image></Link>
       </div>
 
       <div className="info flex justify-center flex-col py-4">
