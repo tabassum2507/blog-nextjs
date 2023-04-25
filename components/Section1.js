@@ -47,11 +47,11 @@ function Slide(){
                </div>
 
                <div className="title">
-                    <Link href={"/"} className="text-3xl md:text-6xl font-bold text-gray-800 hover:text-gray-600">title</Link>
+                    <Link href={"/"} className="text-3xl md:text-6xl font-bold text-gray-800 hover:text-gray-600">Welcome to JIMJAM World!</Link>
                 </div>
 
                 <p className="text-gray-500 py-3">
-                    description
+                If you would like dynamic pages, which are in the same folder but have different slugs (such as blog posts), Next allows us to render the same page component by wrapping the filename in brackets.
                 </p>
                 <Author></Author>
             </div>

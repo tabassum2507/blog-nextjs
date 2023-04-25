@@ -41,3 +41,33 @@ function Article(){
 
 
 export default pages
+
+
+export async function getStaticProps( { params } ){
+    const posts = await getPost(params.postId)
+
+    return {
+       props : {
+            fallback : {
+                '/api/posts' : posts
+            }
+       }
+    }
+}
+
+export async function getStaticPaths(){
+    const posts = await getPost();
+    const paths = posts.map(value => {
+        return {
+            params : {
+                postId : value.id.toString()
+            }
+        }
+    })
+
+    return {
+        paths,
+        fallback : false
+    }
+
+}
